@@ -1,0 +1,64 @@
+xxbody {
+  font-family: system-ui, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.day-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+}
+
+.image-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.image-strip img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.day-title {
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.timeline {
+  margin-bottom: 1rem;
+}
+
+.slot {
+  margin: 0.3rem 0;
+}
+
+.budget {
+  border-top: 1px solid #eee;
+  padding-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #555;
+}
