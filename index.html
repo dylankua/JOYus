@@ -5,42 +5,64 @@
   <title>NZ Travel Itinerary</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: system-ui, sans-serif;
       background: #f9f9f9;
       margin: 0;
       padding: 1rem;
       line-height: 1.5;
+      color: #333;
     }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 0.2rem;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
     .day-card {
       background: #fff;
       border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       margin-bottom: 1.5rem;
       padding: 1rem;
     }
+
     .image-strip {
       display: flex;
       gap: 8px;
       overflow-x: auto;
       margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
     }
+
     .image-strip img {
       width: 70px;
       height: 70px;
       object-fit: cover;
       border-radius: 8px;
       flex-shrink: 0;
+      background: #e0e0e0;
     }
+
     .day-title {
       font-weight: bold;
       margin-bottom: 0.8rem;
+      font-size: 1.1rem;
     }
+
     .timeline {
       margin-bottom: 1rem;
     }
+
     .slot {
       margin: 0.3rem 0;
     }
+
     .budget {
       border-top: 1px solid #eee;
       padding-top: 0.6rem;
@@ -54,26 +76,291 @@
   <h1>🇳🇿 New Zealand Itinerary</h1>
   <p>A 15-day adventure across the South Island</p>
 
-  <!-- Example: Day 2 -->
+  <!-- Day 1 -->
   <div class="day-card">
     <div class="image-strip">
-      <img src="images/christchurch.jpg" alt="Christchurch">
-      <img src="images/kaikoura.jpg" alt="Kaikoura">
-      <img src="images/peaks-hill.jpg" alt="Peaks Hill">
+      <img src="images/christchurch.jpg" alt="Christchurch" />
     </div>
-    <div class="day-title">Day 2 – Christchurch → Kaikoura → Peaks Hill ➕</div>
+    <div class="day-title">Day 1 — Christchurch 🏙️</div>
     <div class="timeline">
-      <div class="slot">☀️ Morning: Kaikoura 🐋, Peaks Hill 🌄</div>
-      <div class="slot">🌤️ Afternoon: Church of Good Shepherd ⛪, Lake Pukaki 🌅</div>
-      <div class="slot">🌙 Night: Fairlie Pie 🥧, Lake Tekapo 💙</div>
+      <div class="slot">☀️ Morning: Arrival & city exploration</div>
+      <div class="slot">🌤️ Afternoon: Christchurch Botanic Gardens 🌺</div>
+      <div class="slot">🌙 Night: Rest & local dining 🍽️</div>
     </div>
     <div class="budget">
-      ⛽ ~NZD 120 🎟️ ~NZD 260 🏡 ~NZD 240  
-      <br>➡️ 💰 <b>Total: ~NZD 500</b>
+      ⛽ ~NZD 50 🎟️ ~NZD 80 🏡 ~NZD 150  
+      <br>➡️ 💰 <b>Total: ~NZD 280</b>
     </div>
   </div>
 
-  <!-- TODO: Repeat similar blocks for Day 1 → Day 15 -->
+  <!-- Day 2 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/christchurch.jpg" alt="Christchurch" />
+      <img src="images/kaikoura.jpg" alt="Kaikoura" />
+      <img src="images/peaks-hill.jpg" alt="Peaks Hill" />
+    </div>
+    <div class="day-title">Day 2 — Christchurch → Kaikoura → Peaks Hill 🐋</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Drive to Kaikoura 🚗</div>
+      <div class="slot">🌤️ Afternoon: Whale watching & Peaks Hill viewpoint 🌄</div>
+      <div class="slot">🌙 Night: Accommodation at Peaks Hill 🏠</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 120 🎟️ ~NZD 260 🏡 ~NZD 240  
+      <br>➡️ 💰 <b>Total: ~NZD 620</b>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/fairlie-pie.jpg" alt="Fairlie Pie" />
+      <img src="images/lake-tekapo.jpg" alt="Lake Tekapo" />
+      <img src="images/church-shepherd.jpg" alt="Church of Good Shepherd" />
+      <img src="images/lake-pukaki.jpg" alt="Lake Pukaki" />
+    </div>
+    <div class="day-title">Day 3 — Peaks Hill → Fairlie → Lake Tekapo → Lake Pukaki 🥧</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Famous Fairlie Bakehouse pie 🥧</div>
+      <div class="slot">🌤️ Afternoon: Church of Good Shepherd ⛪ & Lake Tekapo 💙</div>
+      <div class="slot">🌙 Night: Lake Pukaki accommodation 🌅</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 100 🎟️ ~NZD 150 🏡 ~NZD 220  
+      <br>➡️ 💰 <b>Total: ~NZD 470</b>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/mt-cook.jpg" alt="Mt Cook" />
+      <img src="images/high-country-salmon.jpg" alt="High Country Salmon" />
+      <img src="images/astro-cafe.jpg" alt="Astro Cafe" />
+      <img src="images/tekapo-springs.jpg" alt="Tekapo Springs" />
+    </div>
+    <div class="day-title">Day 4 — Lake Pukaki → Mt Cook → Tekapo Adventures 🏔️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Mt Cook National Park & hiking 🥾</div>
+      <div class="slot">🌤️ Afternoon: High Country Salmon 🍣 & Astro Cafe ☕</div>
+      <div class="slot">🌙 Night: Tekapo Springs ♨️ & star shooting 🌟</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 80 🎟️ ~NZD 320 🏡 ~NZD 240  
+      <br>➡️ 💰 <b>Total: ~NZD 640</b>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/lake-pukaki-chill.jpg" alt="Lake Pukaki Relaxing" />
+      <img src="images/oamaru-penguins.jpg" alt="Oamaru Penguins" />
+    </div>
+    <div class="day-title">Day 5 — Lake Pukaki Chill → Oamaru Penguins 🐧</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Relaxing at Lake Pukaki 😌</div>
+      <div class="slot">🌤️ Afternoon: Drive to Oamaru (3pm) 🚗</div>
+      <div class="slot">🌙 Night: Blue penguin colony viewing 🐧</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 100 🎟️ ~NZD 180 🏡 ~NZD 200  
+      <br>➡️ 💰 <b>Total: ~NZD 480</b>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/lindis-pass.jpg" alt="Lindis Pass" />
+      <img src="images/queenstown.jpg" alt="Queenstown" />
+      <img src="images/glenorchy.jpg" alt="Glenorchy" />
+      <img src="images/kingston-campground.jpg" alt="Kingston Campground" />
+    </div>
+    <div class="day-title">Day 6 — Lake Pukaki → Lindis Pass → Queenstown → Kingston 🏕️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Scenic drive via Lindis Pass 🌄</div>
+      <div class="slot">🌤️ Afternoon: Queenstown arrival & Glenorchy trip 🚗</div>
+      <div class="slot">🌙 Night: Kingston Campground setup 🏕️</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 120 🎟️ ~NZD 100 🏡 ~NZD 80  
+      <br>➡️ 💰 <b>Total: ~NZD 300</b>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/heli-hike.jpg" alt="Helicopter Hike" />
+      <img src="images/queenstown-food.jpg" alt="Queenstown Food" />
+      <img src="images/queenstown-cafe.jpg" alt="Queenstown Cafe" />
+    </div>
+    <div class="day-title">Day 7 — Heli Hike Adventure 🚁</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Helicopter glacier hike 🚁🥾</div>
+      <div class="slot">🌤️ Afternoon: Recovery & exploration 😴</div>
+      <div class="slot">🌙 Night: Queenstown dining & cafes ☕</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 50 🎟️ ~NZD 600 🏡 ~NZD 180  
+      <br>➡️ 💰 <b>Total: ~NZD 830</b>
+    </div>
+  </div>
+
+  <!-- Day 8 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/skydive.jpg" alt="Skydiving" />
+      <img src="images/bungy-jump.jpg" alt="Bungy Jump" />
+      <img src="images/queenstown-dining.jpg" alt="Queenstown Dining" />
+    </div>
+    <div class="day-title">Day 8 — Skydive & Bungy Jump Thrills 🪂</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Skydiving over Queenstown 🪂</div>
+      <div class="slot">🌤️ Afternoon: Kawarau Bungy Jump 🤸‍♂️</div>
+      <div class="slot">🌙 Night: Celebration dinner & drinks 🍽️</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 50 🎟️ ~NZD 800 🏡 ~NZD 200  
+      <br>➡️ 💰 <b>Total: ~NZD 1050</b>
+    </div>
+  </div>
+
+  <!-- Day 9 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/ben-lomond.jpg" alt="Ben Lomond" />
+      <img src="images/te-anau.jpg" alt="Te Anau" />
+    </div>
+    <div class="day-title">Day 9 — Ben Lomond Hike → Te Anau 🥾</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Ben Lomond summit hike 🏔️</div>
+      <div class="slot">🌤️ Afternoon: Drive to Te Anau 🚗</div>
+      <div class="slot">🌙 Night: Te Anau lakefront relaxation 🌅</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 100 🎟️ ~NZD 80 🏡 ~NZD 160  
+      <br>➡️ 💰 <b>Total: ~NZD 340</b>
+    </div>
+  </div>
+
+  <!-- Day 10 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/milford-cruise.jpg" alt="Milford Cruise" />
+      <img src="images/pio-pio.jpg" alt="Pio Pio" />
+      <img src="images/mirror-lake.jpg" alt="Mirror Lake" />
+      <img src="images/glowworm-caves.jpg" alt="Glowworm Caves" />
+    </div>
+    <div class="day-title">Day 10 — Milford Sound Epic Day Trip 🚢</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Milford Road scenic stops 📸</div>
+      <div class="slot">🌤️ Afternoon: Milford Sound cruise & Pio Pio 🚢</div>
+      <div class="slot">🌙 Night: Te Anau Glowworm Caves ✨</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 120 🎟️ ~NZD 400 🏡 ~NZD 160  
+      <br>➡️ 💰 <b>Total: ~NZD 680</b>
+    </div>
+  </div>
+
+  <!-- Day 11 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/arrowtown.jpg" alt="Arrowtown" />
+      <img src="images/jack-point.jpg" alt="Jack Point Track" />
+      <img src="images/wanaka.jpg" alt="Wanaka" />
+    </div>
+    <div class="day-title">Day 11 — Te Anau → Arrowtown → Wanaka 🏘️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Historic Arrowtown exploration 🏘️</div>
+      <div class="slot">🌤️ Afternoon: Jack Point Track hike 🚶‍♂️</div>
+      <div class="slot">🌙 Night: Wanaka lakefront arrival 🌅</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 110 🎟️ ~NZD 120 🏡 ~NZD 180  
+      <br>➡️ 💰 <b>Total: ~NZD 410</b>
+    </div>
+  </div>
+
+  <!-- Day 12 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/roys-peak.jpg" alt="Roys Peak" />
+      <img src="images/wanaka-tree.jpg" alt="Wanaka Tree" />
+      <img src="images/big-fig.jpg" alt="Big Fig" />
+    </div>
+    <div class="day-title">Day 12 — Roys Peak & Wanaka Highlights 📸</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Roys Peak sunrise hike 🌄</div>
+      <div class="slot">🌤️ Afternoon: Famous Wanaka Tree 🌳 & Big Fig 🍕</div>
+      <div class="slot">🌙 Night: Wanaka town exploration 🛍️</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 60 🎟️ ~NZD 100 🏡 ~NZD 180  
+      <br>➡️ 💰 <b>Total: ~NZD 340</b>
+    </div>
+  </div>
+
+  <!-- Day 13 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/robs-roy.jpg" alt="Robs Roy Glacier" />
+      <img src="images/lake-tekapo-return.jpg" alt="Lake Tekapo Return" />
+    </div>
+    <div class="day-title">Day 13 — Wanaka → Robs Roy → Lake Tekapo 🏔️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Robs Roy Glacier Track 🥾</div>
+      <div class="slot">🌤️ Afternoon: Drive to Lake Tekapo 🚗</div>
+      <div class="slot">🌙 Night: Lake Tekapo stargazing return ⭐</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 140 🎟️ ~NZD 80 🏡 ~NZD 200  
+      <br>➡️ 💰 <b>Total: ~NZD 420</b>
+    </div>
+  </div>
+
+  <!-- Day 14 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/lake-tekapo-walks.jpg" alt="Lake Tekapo Walks" />
+      <img src="images/christchurch-return.jpg" alt="Return to Christchurch" />
+    </div>
+    <div class="day-title">Day 14 — Lake Tekapo Walks → Christchurch 🚶‍♂️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Lake Tekapo walking tracks 🚶‍♂️</div>
+      <div class="slot">🌤️ Afternoon: Final lake views & drive to Christchurch 🚗</div>
+      <div class="slot">🌙 Night: Christchurch farewell dinner 🍽️</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 100 🎟️ ~NZD 80 🏡 ~NZD 150  
+      <br>➡️ 💰 <b>Total: ~NZD 330</b>
+    </div>
+  </div>
+
+  <!-- Day 15 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/departure.jpg" alt="Departure" />
+    </div>
+    <div class="day-title">Day 15 — Departure Home ✈️</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Last-minute shopping & packing 🛍️</div>
+      <div class="slot">🌤️ Afternoon: Airport departure ✈️</div>
+      <div class="slot">🌙 Night: Homeward bound 🏠</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 50 🎟️ ~NZD 100 🏡 ~NZD 0  
+      <br>➡️ 💰 <b>Total: ~NZD 150</b>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: #fff; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+    <h3>🎯 Trip Total Estimate: ~NZD 7,540</h3>
+    <p style="color: #666;">*Prices are approximate and may vary based on season, bookings, and personal preferences</p>
+  </div>
 
 </body>
 </html>
