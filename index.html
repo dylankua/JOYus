@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NZ Travel Itinerary</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 1rem;
+      line-height: 1.5;
+    }
+    .day-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+    }
+    .image-strip {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin-bottom: 1rem;
+    }
+    .image-strip img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .day-title {
+      font-weight: bold;
+      margin-bottom: 0.8rem;
+    }
+    .timeline {
+      margin-bottom: 1rem;
+    }
+    .slot {
+      margin: 0.3rem 0;
+    }
+    .budget {
+      border-top: 1px solid #eee;
+      padding-top: 0.6rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🇳🇿 New Zealand Itinerary</h1>
+  <p>A 15-day adventure across the South Island</p>
+
+  <!-- Example: Day 2 -->
+  <div class="day-card">
+    <div class="image-strip">
+      <img src="images/christchurch.jpg" alt="Christchurch">
+      <img src="images/kaikoura.jpg" alt="Kaikoura">
+      <img src="images/peaks-hill.jpg" alt="Peaks Hill">
+    </div>
+    <div class="day-title">Day 2 – Christchurch → Kaikoura → Peaks Hill ➕</div>
+    <div class="timeline">
+      <div class="slot">☀️ Morning: Kaikoura 🐋, Peaks Hill 🌄</div>
+      <div class="slot">🌤️ Afternoon: Church of Good Shepherd ⛪, Lake Pukaki 🌅</div>
+      <div class="slot">🌙 Night: Fairlie Pie 🥧, Lake Tekapo 💙</div>
+    </div>
+    <div class="budget">
+      ⛽ ~NZD 120 🎟️ ~NZD 260 🏡 ~NZD 240  
+      <br>➡️ 💰 <b>Total: ~NZD 500</b>
+    </div>
+  </div>
+
+  <!-- TODO: Repeat similar blocks for Day 1 → Day 15 -->
+
+</body>
+</html>
